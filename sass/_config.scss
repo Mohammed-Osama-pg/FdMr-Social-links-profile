@@ -1,8 +1,17 @@
+$context: 14px;
+:root {
+  --color-primary: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-700: hsl(0, 0%, 20%);
+  --color-gray-800: hsl(0, 0%, 12%);
+  --color-gray-900: hsl(0, 0%, 8%);
+  --font-family: "Inter";
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
 }

@@ -1,0 +1,29 @@
+@use "functions" as f;
+@use "sass:map";
+$breakpoints: (
+  "medium": f.rem(768),
+  "large": f.rem(1024),
+  "xlarge": f.rem(1280),
+);
+@mixin breakpoint($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media (min-width: map-get($breakpoints, $point)) {
+      @content;
+    }
+  }
+}
+@mixin text-preset-1 {
+  font-size: f.rem(24);
+  font-weight: bold;
+  line-height: 1.5;
+}
+@mixin text-preset-2 {
+  font-size: f.rem(14);
+  font-weight: normal;
+  line-height: 1.5;
+}
+@mixin text-preset-3 {
+  font-size: f.rem(14);
+  font-weight: bold;
+  line-height: 1.5;
+}

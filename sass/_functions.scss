@@ -1,0 +1,13 @@
+@use "sass:math";
+@function rem($px) {
+  @if (unitless($px)) {
+    @warn "Assuming #{$px} to be in pixels, attempting to convert it to a number.";
+    @return rem($px * 1px);
+  }
+}
+@function em($px, $context) {
+  @if (unitless($px)) {
+    @warn "Assuming #{$px} to be in pixels, attempting to convert it to a number.";
+    @return em($px * 1px, $context);
+  }
+}
