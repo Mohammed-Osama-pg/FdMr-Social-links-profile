@@ -7,8 +7,8 @@ Your users should be able to:
 
 ##Ideas to test yourself
 1. Personalize the project to add my information, links, and color palette.
-2 . Focus on writing semantic HTML and using the correct elements based on the content.
-3 . Ensure visitors can navigate the links only using their keyboard.
+2. Focus on writing semantic HTML and using the correct elements based on the content.
+3. Ensure visitors can navigate the links only using their keyboard.
 4. Train your eye for detail by making your solution look similar to the design.
 
 ## Research:
