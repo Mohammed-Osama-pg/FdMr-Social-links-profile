@@ -11,13 +11,13 @@ main {
   color: var(--color-white);
 
   .card {
-    width: 100%;
+    width: clamp(rem(327), 90%, rem(384));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: rem(24);
-    padding: rem(24);
+    padding: clamp(rem(24), 6%, rem(40));
     background-color: var(--color-gray-800);
     border-radius: rem(12);
 
