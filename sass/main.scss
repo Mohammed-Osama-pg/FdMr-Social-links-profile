@@ -1,1 +1,74 @@
 @import "./config", "./fonts", "mixins", "./functions";
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: rem(24);
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+
+  .card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: rem(24);
+    padding: rem(24);
+    background-color: var(--color-gray-800);
+    border-radius: rem(12);
+
+    &__profile-pic {
+      width: rem(88);
+      height: rem(88);
+      border-radius: 50%;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: rem(4);
+      text-align: center;
+
+      .name {
+        @include text-preset-1;
+      }
+      .location {
+        @include text-preset-3;
+        color: var(--color-primary);
+      }
+    }
+    &__bio {
+      @include text-preset-2;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(16);
+      width: 100%;
+      li {
+        width: 100%;
+      }
+      &__link {
+        display: block;
+        width: 100%;
+        background-color: var(--color-gray-700);
+        @include text-preset-3;
+        padding-block: rem(12);
+        text-align: center;
+        border-radius: rem(8);
+        cursor: pointer;
+        transition: 0.6s ease;
+        &:hover {
+          background-color: var(--color-primary);
+          color: var(--color-gray-700);
+        }
+      }
+    }
+  }
+}
