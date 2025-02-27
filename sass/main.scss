@@ -64,7 +64,8 @@ main {
         border-radius: rem(8);
         cursor: pointer;
         transition: 0.6s ease;
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: var(--color-primary);
           color: var(--color-gray-700);
         }
